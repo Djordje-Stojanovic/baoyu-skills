@@ -113,6 +113,8 @@ All skills MUST use `baoyu-` prefix. Details: [docs/creating-skills.md](docs/cre
 
 ## How we work
 
+- Before you write code: [`ENGINEERING.md`](ENGINEERING.md). Section 1 is the Algorithm, Musk's five steps. Run them, in order, before every task.
+
 Owner's order, 2026-11-12. Run Musk's five steps before every task: question, delete, simplify, speed up, automate.
 
 - Plan content on https://schedule.geldtools.com, the owner's planner and the source of truth for what goes out when: `/planner` holds the plan to 2027-12-31 (which series on which day), `/calendar` every planned and live post, `/posts` and `/status` what went out. Look there before you pick a topic or a slot; plan nowhere else.
