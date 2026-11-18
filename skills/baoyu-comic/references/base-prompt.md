@@ -90,8 +90,8 @@ When depicting narrator characters addressing the reader:
 
 ## Language
 
-- All text in Chinese (中文) unless source material is in another language
-- Use Chinese full-width punctuation: ""，。！
+- All text in the user's language, unless the source material is in another language
+- For Chinese text, use full-width punctuation: ""，。！
 
 ---
 

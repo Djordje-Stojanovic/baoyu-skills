@@ -6,11 +6,11 @@ Guidelines for `--style ohmsha` educational manga comics.
 
 | Role | Default | Traits |
 |------|---------|--------|
-| Student (Role A) | 大雄 | Confused, asks basic but crucial questions, represents reader |
-| Mentor (Role B) | 哆啦A梦 | Knowledgeable, patient, uses gadgets as technical metaphors |
-| Antagonist (Role C, optional) | 胖虎 | Represents misunderstanding, or "noise" in the data |
+| Student (Role A) | 大雄 (Nobita) | Confused, asks basic but crucial questions, represents reader |
+| Mentor (Role B) | 哆啦A梦 (Doraemon) | Knowledgeable, patient, uses gadgets as technical metaphors |
+| Antagonist (Role C, optional) | 胖虎 (Gian) | Represents misunderstanding, or "noise" in the data |
 
-Custom characters: `--characters "Student:小明,Mentor:教授,Antagonist:Bug怪"`
+Custom characters: `--characters "Student:小明,Mentor:教授,Antagonist:Bug怪"` (Xiao Ming, Professor, Bug Monster)
 
 ## Character Reference Sheet Style
 
@@ -25,7 +25,7 @@ For Ohmsha style, use manga/anime style with:
 Every ohmsha outline must start with:
 
 ```markdown
-【漫画规格单】
+【漫画规格单】 (Comic spec sheet)
 - Language: [Same as input content]
 - Style: Ohmsha (Manga Guide), Full Color
 - Layout: Vertical Scrolling Comic (竖版条漫)
@@ -46,16 +46,16 @@ Every ohmsha outline must start with:
 
 | Concept | Bad (Talking Heads) | Good (Visual Metaphor) |
 |---------|---------------------|------------------------|
-| Word embeddings | Characters discussing vectors | 哆啦A梦拿出"词向量压缩机"，把书本压缩成彩色小球 |
-| Gradient descent | Explaining math formula | 大雄在山谷地形上滚球，寻找最低点 |
-| Neural network | Diagram on whiteboard | 角色走进由发光节点组成的网络迷宫 |
+| Word embeddings | Characters discussing vectors | 哆啦A梦拿出"词向量压缩机"，把书本压缩成彩色小球 (Doraemon pulls out a "word-vector compressor" and squeezes books into colorful little balls) |
+| Gradient descent | Explaining math formula | 大雄在山谷地形上滚球，寻找最低点 (Nobita rolls a ball across a valley landscape to find the lowest point) |
+| Neural network | Diagram on whiteboard | 角色走进由发光节点组成的网络迷宫 (Characters walk into a maze made of glowing nodes) |
 
 ## Page Title Convention
 
 Avoid AI-style "Title: Subtitle" format. Use narrative descriptions:
 
 - ❌ "Page 3: Introduction to Neural Networks"
-- ✓ "Page 3: 大雄被海量单词淹没，哆啦A梦拿出'词向量压缩机'"
+- ✓ "Page 3: 大雄被海量单词淹没，哆啦A梦拿出'词向量压缩机'" (Nobita is buried under a flood of words, and Doraemon pulls out the "word-vector compressor")
 
 ## Ending Requirements
 

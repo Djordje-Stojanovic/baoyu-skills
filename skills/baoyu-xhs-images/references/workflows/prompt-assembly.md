@@ -337,20 +337,20 @@ Create a Xiaohongshu (Little Red Book) style infographic following these guideli
 ## Content
 
 **Position**: Content (Page 3 of 6)
-**Core Message**: ChatGPT 使用技巧
+**Core Message**: ChatGPT usage tips
 
 **Text Content**:
 - Title: 「ChatGPT」
-- Subtitle: 最强 AI 助手
+- Subtitle: 最强 AI 助手 (The strongest AI assistant)
 - Points:
-  - 写文案：给出框架，秒出初稿
-  - 改文章：润色、翻译、总结
-  - 编程：写代码、找 bug
-  - 学习：解释概念、出题练习
+  - 写文案：给出框架，秒出初稿 (Copywriting: give a framework, get a first draft in seconds)
+  - 改文章：润色、翻译、总结 (Editing: polish, translate, summarize)
+  - 编程：写代码、找 bug (Coding: write code, find bugs)
+  - 学习：解释概念、出题练习 (Learning: explain concepts, create practice questions)
 
 **Visual Concept**:
-ChatGPT logo 居中，四周放射状展示功能点
-深色科技背景，霓虹绿点缀
+ChatGPT logo centered, feature points radiating around it
+Dark tech background, neon green accents
 
 ---
 

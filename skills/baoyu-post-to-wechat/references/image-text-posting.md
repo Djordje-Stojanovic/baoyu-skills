@@ -1,6 +1,6 @@
-# Image-Text Posting (贴图发表, formerly 图文)
+# Image-Text Posting (贴图发表 "sticker-image posting", formerly 图文 "image-text")
 
-WeChat renamed "图文" to "贴图" in the Official Account menu (2026).
+WeChat renamed "图文" (image-text) to "贴图" (sticker-image) in the Official Account menu (2026).
 
 ## Usage
 
@@ -34,7 +34,7 @@ Max 9 images (WeChat limit).
 With `--markdown`:
 
 1. Title/author from frontmatter (`title`, `author`); else the H1 becomes the title.
-2. Title compressed to 20 chars if longer (e.g. "如何在一天内彻底重塑你的人生" → "一天彻底重塑你的人生").
+2. Title compressed to 20 chars if longer (e.g. "如何在一天内彻底重塑你的人生" (how to completely reshape your life in one day) → "一天彻底重塑你的人生" (reshape your life in one day)).
 3. First paragraphs become content (max 1000 chars).
 
 ## Image Directory Mode

@@ -1,6 +1,6 @@
 # wuxia
 
-武侠预设 - Hong Kong martial arts comic style
+Wuxia preset - Hong Kong martial arts comic style
 
 ## Base Configuration
 

@@ -104,8 +104,8 @@ When a real person/character/object must be preserved from reference images:
 | `ZAI_API_KEY` (alias `BIGMODEL_API_KEY`) | Z.AI API key |
 | `MINIMAX_API_KEY` | MiniMax API key |
 | `REPLICATE_API_TOKEN` | Replicate API token |
-| `JIMENG_ACCESS_KEY_ID`, `JIMENG_SECRET_ACCESS_KEY` | Jimeng (即梦) Volcengine credentials |
-| `ARK_API_KEY` | Seedream (豆包) Volcengine ARK API key |
+| `JIMENG_ACCESS_KEY_ID`, `JIMENG_SECRET_ACCESS_KEY` | Jimeng (即梦, Jimeng) Volcengine credentials |
+| `ARK_API_KEY` | Seedream (豆包, Doubao) Volcengine ARK API key |
 | `<PROVIDER>_IMAGE_MODEL` | Per-provider model override (`OPENAI_IMAGE_MODEL`, `GOOGLE_IMAGE_MODEL`, `DASHSCOPE_IMAGE_MODEL`, `ZAI_IMAGE_MODEL`/`BIGMODEL_IMAGE_MODEL`, `MINIMAX_IMAGE_MODEL`, `OPENROUTER_IMAGE_MODEL`, `REPLICATE_IMAGE_MODEL`, `JIMENG_IMAGE_MODEL`, `SEEDREAM_IMAGE_MODEL`, `AGNES_IMAGE_MODEL`) |
 | `AZURE_OPENAI_DEPLOYMENT` (alias `AZURE_OPENAI_IMAGE_MODEL`) | Azure default deployment |
 | `<PROVIDER>_BASE_URL` | Per-provider endpoint override |

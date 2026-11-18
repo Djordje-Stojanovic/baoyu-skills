@@ -53,7 +53,7 @@ Change the pinned backend via `## Changing Preferences` below. Tool names above 
 After every prompt file for the current generation group is saved and verified, generate slide images in batches by default:
 
 1. Use the backend's native batch / multi-task interface if it exists. Each task keeps its own prompt file, output path, aspect ratio, session ID, and direct reference images.
-2. Else, if the runtime can issue parallel tool calls, dispatch up to `generation_batch_size` slide images at a time (default `4`). An explicit request in the current message (e.g. `--batch-size 4`, "并行4张一起生成") overrides EXTEND.md.
+2. Else, if the runtime can issue parallel tool calls, dispatch up to `generation_batch_size` slide images at a time (default `4`). An explicit request in the current message (e.g. `--batch-size 4`, "并行4张一起生成" (generate 4 in parallel)) overrides EXTEND.md.
 3. Else generate sequentially.
 
 Rules:
@@ -69,7 +69,7 @@ Default behavior: **confirm before generation**.
 
 - Treat explicit skill invocation, a file path, matched signals/presets, and `EXTEND.md` defaults as **recommendation inputs only**. None of them authorizes skipping confirmation.
 - Do **not** start Step 3 or later until the user completes Step 2.
-- Skip confirmation only when the current request explicitly says to do so, for example: "直接生成", "不用确认", "跳过确认", "按默认出幻灯片", or equivalent wording.
+- Skip confirmation only when the current request explicitly says to do so, for example: "直接生成" (generate directly), "不用确认" (no need to confirm), "跳过确认" (skip confirmation), "按默认出幻灯片" (use the default slides), or equivalent wording.
 - If confirmation is skipped explicitly, state the assumed style / audience / slide-count / language / backend in the next user-facing update before generating.
 
 ## Language
@@ -249,7 +249,7 @@ Save findings to `analysis.md`: topic, audience, signals, recommended style and 
 
 ### Step 2: Confirmation ⚠️ REQUIRED
 
-**Hard gate** per the [Confirmation Policy](#confirmation-policy): Steps 3+ wait for the user's answer here unless the current request explicitly opts out ("直接生成" or equivalent).
+**Hard gate** per the [Confirmation Policy](#confirmation-policy): Steps 3+ wait for the user's answer here unless the current request explicitly opts out ("直接生成" (generate directly) or equivalent).
 
 **Round 1 (always)** — batch five questions in one `AskUserQuestion` call: style, audience, slide count, review-outline?, review-prompts?. Verbatim options in `references/confirmation.md`.
 

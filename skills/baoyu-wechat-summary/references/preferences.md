@@ -13,7 +13,7 @@ EXTEND.md is plain text with `key: value` or `key=value` lines, `#` for comments
 | `default_version` | `normal` / `roast` / `both` | `normal` | Which version(s) to generate when the user doesn't say otherwise. |
 | `default_time_range` | string (e.g. `7d`, `24h`, `1d`) | (none) | Default range when the user omits time and there's no incremental anchor. |
 | `data_root` | path | `{project_root}/wechat` | Override where digest folders live. |
-| `bot_aliases` | comma-separated strings | `bot, 精华bot` | Names that trigger the 「@bot 答疑」 section. A message containing `@<alias>` (case-insensitive) is treated as a question/request aimed at the digest bot. Pick names that do NOT match any real group member or existing bot, to avoid ambiguity. |
+| `bot_aliases` | comma-separated strings | `bot, 精华bot` | Names that trigger the 「@bot 答疑」 (@bot Q&A) section. A message containing `@<alias>` (case-insensitive) is treated as a question/request aimed at the digest bot. Pick names that do NOT match any real group member or existing bot, to avoid ambiguity. |
 
 A starter template lives at [EXTEND.md.example](../EXTEND.md.example).
 

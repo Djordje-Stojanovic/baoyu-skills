@@ -23,22 +23,22 @@ ${BUN_X} {baseDir}/scripts/main.ts --prompt "A cat" --image out.png --provider o
 # OpenRouter with reference
 ${BUN_X} {baseDir}/scripts/main.ts --prompt "Make blue" --image out.png --provider openrouter --model google/gemini-3.1-flash-image --ref source.png
 
-# DashScope (default model)
+# DashScope (default model; prompt means "a cute cat")
 ${BUN_X} {baseDir}/scripts/main.ts --prompt "一只可爱的猫" --image out.png --provider dashscope
 
-# DashScope Qwen-Image 2.0 Pro (custom size, Chinese text)
+# DashScope Qwen-Image 2.0 Pro (custom size, Chinese text; prompt means "design a 21:9 banner poster for a coffee brand with a clear Chinese title")
 ${BUN_X} {baseDir}/scripts/main.ts --prompt "为咖啡品牌设计一张 21:9 横幅海报，包含清晰中文标题" --image out.png --provider dashscope --model qwen-image-2.0-pro --size 2048x872
 
-# DashScope legacy fixed-size
+# DashScope legacy fixed-size (prompt means "a cinematic poster")
 ${BUN_X} {baseDir}/scripts/main.ts --prompt "一张电影感海报" --image out.png --provider dashscope --model qwen-image-max --size 1664x928
 
-# DashScope Wan 2.7 Image Pro (4K text-to-image)
+# DashScope Wan 2.7 Image Pro (4K text-to-image; prompt means "a flower shop with exquisite windows")
 ${BUN_X} {baseDir}/scripts/main.ts --prompt "一间有着精致窗户的花店" --image out.png --provider dashscope --model wan2.7-image-pro --size 4096x4096
 
-# DashScope Wan 2.7 Image with reference image (multi-image fusion)
+# DashScope Wan 2.7 Image with reference image (multi-image fusion; prompt means "spray the graffiti from image 2 onto the car in image 1")
 ${BUN_X} {baseDir}/scripts/main.ts --prompt "把图2的涂鸦喷绘在图1的汽车上" --image out.png --provider dashscope --model wan2.7-image-pro --ref car.webp paint.webp
 
-# Z.AI GLM-image
+# Z.AI GLM-image (prompt means "a tech poster with a clear Chinese title")
 ${BUN_X} {baseDir}/scripts/main.ts --prompt "一张带清晰中文标题的科技海报" --image out.png --provider zai
 
 # Z.AI with custom size

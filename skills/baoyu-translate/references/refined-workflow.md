@@ -75,7 +75,7 @@ Main agent reviews the draft against the source → `04-critique.md`. **Diagnosi
 ### 4.2 Native Voice
 
 - Flag sentences that read as "translated" rather than "written" — unnatural word order, calques, stiff phrasing
-- For CJK targets: check for unnecessary connectives (因此/然而/此外), passive voice abuse (被/由/受到), noun pile-ups, over-nominalization
+- For CJK targets: check for unnecessary connectives (因此 "therefore" / 然而 "however" / 此外 "moreover"), passive voice abuse (被/由/受到, passive markers), noun pile-ups, over-nominalization
 - Flag metaphors translated literally that sound unnatural in the target language
 - Check emotional connotations are preserved, not flattened
 - Note where sentence restructuring would improve readability

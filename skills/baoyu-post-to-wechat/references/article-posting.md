@@ -1,4 +1,4 @@
-# Article Posting (文章发表)
+# Article Posting (文章发表, "article publishing")
 
 ## Usage
 

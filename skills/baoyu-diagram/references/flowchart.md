@@ -31,7 +31,7 @@ Primary flow: **top to bottom**. Branch flows go left/right from decisions.
 
 ## Decision Labels
 
-Place "Yes" / "No" (or "True" / "False", "是" / "否") labels directly on the exit arrows, 10px from the diamond edge:
+Place "Yes" / "No" (or "True" / "False", "是" (yes) / "否" (no)) labels directly on the exit arrows, 10px from the diamond edge:
 
 ```svg
 <!-- Decision diamond at center (400, 200) -->

@@ -1,6 +1,6 @@
 ---
 name: baoyu-xhs-images
-description: Generates infographic image card series with 12 visual styles, 8 layouts, and 3 color palettes. Breaks content into 1-10 cartoon-style image cards optimized for social media engagement. Use when user mentions "小红书图片", "小红书种草", "小绿书", "微信图文", "微信贴图", "image cards", "图片卡片", baoyu-xhs-images, or wants social media infographic series.
+description: Generates infographic image card series with 12 visual styles, 8 layouts, and 3 color palettes. Breaks content into 1-10 cartoon-style image cards optimized for social media engagement. Use when user mentions "小红书图片" (Xiaohongshu images), "小红书种草" (Xiaohongshu product recommendation), "小绿书" (Xiaolvshu), "微信图文" (WeChat article with images), "微信贴图" (WeChat sticker post), "image cards", "图片卡片" (image cards), baoyu-xhs-images, or wants social media infographic series.
 version: 2.0.1
 metadata:
   openclaw:
@@ -51,7 +51,7 @@ After every prompt file for the current generation group has been saved and veri
 Priority order:
 
 1. Use the chosen backend's native batch / multi-task interface if it exists. Each task must keep its own prompt file, output path, aspect ratio, session ID, and direct reference images.
-2. If no native batch interface exists but the runtime can issue parallel tool calls, dispatch up to `generation_batch_size` images at a time. Default: `4`. An explicit user request in the current message, such as `--batch-size 4` or "并行 4 张一起生成", overrides EXTEND.md.
+2. If no native batch interface exists but the runtime can issue parallel tool calls, dispatch up to `generation_batch_size` images at a time. Default: `4`. An explicit user request in the current message, such as `--batch-size 4` or "并行 4 张一起生成" (generate 4 in parallel), overrides EXTEND.md.
 3. If neither native batch nor parallel tool calls are available, generate sequentially.
 
 Rules:
@@ -67,7 +67,7 @@ Default behavior: **confirm before generation**.
 
 - Treat explicit skill invocation, a file path, matched signals/presets, and `EXTEND.md` defaults as **recommendation inputs only**. None of them authorizes skipping confirmation.
 - Do **not** start Step 3 until the user completes Step 2.
-- Skip confirmation only when the current request explicitly says to do so, for example: `--yes`, "直接生成", "不用确认", "跳过确认", "按默认出图", or equivalent wording.
+- Skip confirmation only when the current request explicitly says to do so, for example: `--yes`, "直接生成" (generate directly), "不用确认" (no need to confirm), "跳过确认" (skip confirmation), "按默认出图" (use the defaults), or equivalent wording.
 - If confirmation is skipped explicitly, state the assumed strategy / style / layout / palette / count / backend in the next user-facing update before generating.
 
 ## Language
@@ -167,7 +167,7 @@ Match content signals to the best combo. First row whose keywords appear wins; f
 | education, tutorial, learning, classroom | `chalkboard` | balanced/dense | `tutorial`, `classroom` |
 | notes, handwritten, study guide, realistic | `study-notes` | dense/list/mindmap | `study-guide` |
 | movie, poster, opinion, editorial, cinematic | `screen-print` | sparse/comparison | `poster`, `editorial`, `cinematic` |
-| hand-drawn, infographic, workflow, 手绘，图解 | `sketch-notes` | flow/balanced/dense | `hand-drawn-edu`, `sketch-card`, `sketch-summary` |
+| hand-drawn, infographic, workflow, 手绘，图解 (hand-drawn, diagram explanation) | `sketch-notes` | flow/balanced/dense | `hand-drawn-edu`, `sketch-card`, `sketch-summary` |
 
 ## Style × Layout Matrix
 
@@ -200,7 +200,7 @@ image-cards/{topic-slug}/
 └── refs/                          # only if --ref used
 ```
 
-**Slug**: 2-4 words, kebab-case. "AI 工具推荐" → `ai-tools-recommend`. On collision, append `-YYYYMMDD-HHMMSS`.
+**Slug**: 2-4 words, kebab-case. "AI 工具推荐" (AI tool recommendations) → `ai-tools-recommend`. On collision, append `-YYYYMMDD-HHMMSS`.
 
 **Backup rule** (applies throughout): before overwriting any file — source, outline, prompt, image — rename the existing one to `<name>-backup-YYYYMMDD-HHMMSS.<ext>`. This protects user edits.
 
@@ -247,16 +247,16 @@ Goal: present the auto-recommended plan and let the user confirm or adjust. Skip
 **Display summary** before asking:
 
 ```
-📋 内容分析
-  主题：[topic] | 类型：[content_type]
-  要点：[key points]
-  受众：[audience]
+📋 Content analysis
+  Topic: [topic] | Type: [content_type]
+  Key points: [key points]
+  Audience: [audience]
 
-🎨 推荐方案（自动匹配）
-  策略：[A/B/C] [name]（[reason]）
-  风格：[style] · 布局：[layout] · 配色：[palette or 默认] · 预设：[preset]
-  图片：[N]张（封面+[N-2]内容+结尾）
-  元素：[background] / [decorations] / [emphasis]
+🎨 Recommended plan (auto-matched)
+  Strategy: [A/B/C] [name] ([reason])
+  Style: [style] · Layout: [layout] · Palette: [palette or default] · Preset: [preset]
+  Images: [N] (cover + [N-2] content + ending)
+  Elements: [background] / [decorations] / [emphasis]
 ```
 
 Then ask one question — three paths. Verbatim option copy: `references/confirmation.md`.
@@ -371,7 +371,7 @@ When the user asks to edit, add, delete, or fix text on a card after generation,
 EXTEND.md lives at the first matching path listed in Step 0. Three ways to change it:
 
 - **Edit directly** — open EXTEND.md and change fields. Full schema: `references/config/preferences-schema.md`.
-- **Reconfigure interactively** — delete EXTEND.md (or ask "reconfigure baoyu-xhs-images preferences" / "重新配置"). The next run re-triggers first-time setup.
+- **Reconfigure interactively** — delete EXTEND.md (or ask "reconfigure baoyu-xhs-images preferences" / "重新配置" (reconfigure)). The next run re-triggers first-time setup.
 - **Common one-line edits**:
   - `preferred_image_backend: auto` — default; runtime-native tool wins, falls back to the only installed backend, asks only if multiple non-native are present.
   - `preferred_image_backend: codex-imagegen` — pin to Codex's built-in.

@@ -1,6 +1,6 @@
 ---
 name: baoyu-diagram
-description: Create professional diagrams with configurable dark/light theme via CSS custom properties. Use this skill whenever the user asks for any kind of technical or conceptual diagram, visualization of a system, process flow, data flow, component relationship, network topology, decision tree, org chart, state machine, or any visual representation of structure/logic/process. Also trigger when the user says "画个图" "画一个架构图" "diagram" "flowchart" "sequence diagram" "draw me a ..." or uploads content and asks to visualize it. Outputs a dark-theme SVG, a light-theme SVG, and a @2x PNG of each.
+description: Create professional diagrams with configurable dark/light theme via CSS custom properties. Use this skill whenever the user asks for any kind of technical or conceptual diagram, visualization of a system, process flow, data flow, component relationship, network topology, decision tree, org chart, state machine, or any visual representation of structure/logic/process. Also trigger when the user says "画个图" (draw a diagram) "画一个架构图" (draw an architecture diagram) "diagram" "flowchart" "sequence diagram" "draw me a ..." or uploads content and asks to visualize it. Outputs a dark-theme SVG, a light-theme SVG, and a @2x PNG of each.
 version: 1.118.0
 ---
 

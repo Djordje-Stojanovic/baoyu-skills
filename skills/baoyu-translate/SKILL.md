@@ -1,10 +1,10 @@
 ---
 name: baoyu-translate
 description: >-
-  This skill should be used when the user asks to "translate", "翻译", "精翻", "translate article",
-  "translate to Chinese", "translate to English", "改成中文", "改成英文", "convert to Chinese",
-  "localize", "本地化", "refined translation", "精细翻译", "proofread translation", "快速翻译", "快翻",
-  "这篇文章翻译一下", or provides a URL/file with translation intent. Supports three modes
+  This skill should be used when the user asks to "translate", "翻译" (translate), "精翻" (refined translation), "translate article",
+  "translate to Chinese", "translate to English", "改成中文" (change to Chinese), "改成英文" (change to English), "convert to Chinese",
+  "localize", "本地化" (localize), "refined translation", "精细翻译" (detailed translation), "proofread translation", "快速翻译" (quick translation), "快翻" (quick translate),
+  "这篇文章翻译一下" (translate this article), or provides a URL/file with translation intent. Supports three modes
   (quick/normal/refined) with custom glossary support.
 version: 1.117.3
 metadata:
@@ -73,7 +73,7 @@ EXTEND.md overrides defaults; CLI flags override EXTEND.md.
 | Normal | `--mode normal` (default) | Analyze → Translate | Articles, blog posts, general content |
 | Refined | `--mode refined` | Analyze → Translate → Review → Polish | Publication-quality, important documents |
 
-Auto-detection: "快翻", "quick", "直接翻译" → quick; "精翻", "refined", "publication quality", "proofread" → refined; otherwise the default mode.
+Auto-detection: "快翻" (quick translate), "quick", "直接翻译" (translate directly) → quick; "精翻" (refined translation), "refined", "publication quality", "proofread" → refined; otherwise the default mode.
 
 **Style presets** (voice and tone, independent of audience; custom descriptions accepted, e.g. `--style "poetic and lyrical"`):
 
@@ -89,7 +89,7 @@ Auto-detection: "快翻", "quick", "直接翻译" → quick; "精翻", "refined"
 | `conversational` | Casual, spoken-like | Friendly, approachable, as if explaining to a friend |
 | `elegant` | Literary, polished prose | Aesthetically refined, rhythmic, carefully crafted word choices |
 
-**Audience presets** (custom descriptions accepted, e.g. `--audience "AI感兴趣的普通读者"`):
+**Audience presets** (custom descriptions accepted, e.g. `--audience "AI感兴趣的普通读者"` (general readers interested in AI)):
 
 | Value | Description | Effect |
 |-------|-------------|--------|
@@ -153,7 +153,7 @@ After merging, the main agent takes over for review, revision, and polish (Step 
 - **Natural flow**: idiomatic target word order; break long source sentences into shorter ones; render metaphors and idioms by intended meaning, not word-for-word
 - **Terminology**: standard translations, used consistently; annotate specialized terms with the original in parentheses on first occurrence
 - **Preserve format**: all markdown formatting (headings, bold, italic, images, links, code blocks)
-- **Proactive interpretation**: for jargon or concepts the audience may lack context for, add concise explanations in **bold parentheses** `（**解释**）` — few, only where genuinely needed
+- **Proactive interpretation**: for jargon or concepts the audience may lack context for, add concise explanations in **bold parentheses** `（**解释**）` (解释 means "explanation") — few, only where genuinely needed
 - **Frontmatter** (if the source has YAML frontmatter): rename source-metadata fields with a `source` prefix (camelCase: `url`→`sourceUrl`, `title`→`sourceTitle`, etc.), add translated values as new top-level fields (skip `title` if the body has an H1), keep other fields as-is
 
 **Quick**: translate directly → `translation.md`.
@@ -163,7 +163,7 @@ After merging, the main agent takes over for review, revision, and polish (Step 
 2. Assemble prompt → `02-prompt.md` (instructions with context, glossary, challenges)
 3. Translate following `02-prompt.md` → `translation.md`
 
-Then tell the user: "Translation saved. To further review and polish, reply **继续润色** or **refine**." If they do, run refined Steps 4-6 on the existing output: rename current `translation.md` to `03-draft.md`, then write `04-critique.md`, `05-revision.md`, and an updated `translation.md`.
+Then tell the user: "Translation saved. To further review and polish, reply **继续润色** (continue polishing) or **refine**." If they do, run refined Steps 4-6 on the existing output: rename current `translation.md` to `03-draft.md`, then write `04-critique.md`, `05-revision.md`, and an updated `translation.md`.
 
 **Refined** — per-step guidelines in [references/refined-workflow.md](references/refined-workflow.md). Each step reads the previous step's file:
 1. Analyze → `01-analysis.md`

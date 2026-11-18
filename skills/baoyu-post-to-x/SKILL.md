@@ -16,7 +16,7 @@ metadata:
 Posts text, images, videos, and long-form articles to X via a real Chrome browser.
 
 In Codex, three distinct browser paths — do not conflate them:
-- **Codex Chrome plugin / `@chrome` / Chrome Extension**: the bundled `chrome:Chrome` skill and its Node REPL browser client. Required whenever the user says "Codex Chrome plugin", "Codex 自带的 Chrome 插件", `@chrome`, or similar.
+- **Codex Chrome plugin / `@chrome` / Chrome Extension**: the bundled `chrome:Chrome` skill and its Node REPL browser client. Required whenever the user says "Codex Chrome plugin", "Codex 自带的 Chrome 插件" (Codex built-in Chrome plugin), `@chrome`, or similar.
 - **Chrome Computer Use**: `mcp__computer_use__.*` against the visible Google Chrome UI.
 - **CDP script mode**: the bundled scripts; fallback only.
 
@@ -39,7 +39,7 @@ In Codex, three distinct browser paths — do not conflate them:
 
 Choose exactly one mode before interacting with X:
 
-1. User asks for the Codex Chrome plugin, `@chrome`, the Chrome extension, or "Codex 自带的 Chrome 插件" → **Codex Chrome Plugin Mode**. Do not call Computer Use first.
+1. User asks for the Codex Chrome plugin, `@chrome`, the Chrome extension, or "Codex 自带的 Chrome 插件" (Codex built-in Chrome plugin) → **Codex Chrome Plugin Mode**. Do not call Computer Use first.
 2. User asks for Chrome Computer Use → **Chrome Computer Use Mode**. Do not fall back to CDP, Playwright, the in-app Browser, or the Chrome plugin without telling the user and getting approval.
 3. User asks for CDP/script mode → **CDP Script Mode**.
 4. Otherwise prefer **Chrome Computer Use Mode** (if available). For Markdown X Articles with local content images, use the toolbar image flow (`Insert` → `Media` → `Add photos or video`) in "X Articles (UI Modes)". Use CDP Script Mode only when the selected browser-control mode is unavailable or the UI upload/selection flow is unreliable.

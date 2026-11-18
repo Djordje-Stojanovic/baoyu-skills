@@ -1,6 +1,6 @@
 ---
 name: baoyu-infographic
-description: Generate professional infographics with 21 layout types and 22 visual styles. Analyzes content, recommends layout×style combinations, and generates publication-ready infographics. Use when user asks to create "infographic", "信息图", "visual summary", "可视化", or "高密度信息大图".
+description: Generate professional infographics with 21 layout types and 22 visual styles. Analyzes content, recommends layout×style combinations, and generates publication-ready infographics. Use when user asks to create "infographic", "信息图" (infographic), "visual summary", "可视化" (visualize), or "高密度信息大图" (high-density infographic).
 version: 1.117.4
 metadata:
   openclaw:
@@ -73,7 +73,7 @@ Default: **confirm before generation**.
 
 - Explicit skill invocation, a file path, a matched keyword shortcut, `EXTEND.md` defaults, and the documented default combination are recommendation inputs only — none authorizes skipping confirmation.
 - Do not start Step 5 or Step 6 until the user confirms the combination/aspect/language/backend choices.
-- Skip confirmation only when the current request explicitly says so: `--no-confirm`, "直接生成", "不用确认", "跳过确认", "按默认出图", or equivalent. Then state the assumed combination/aspect/language/backend in the next user-facing update before generating.
+- Skip confirmation only when the current request explicitly says so: `--no-confirm`, "直接生成" (generate directly), "不用确认" (no need to confirm), "跳过确认" (skip confirmation), "按默认出图" (use the defaults), or equivalent. Then state the assumed combination/aspect/language/backend in the next user-facing update before generating.
 
 ## Options
 
@@ -264,7 +264,7 @@ Report: topic, layout, style, aspect, language, image backend, output path, file
 
 ## Changing Preferences
 
-EXTEND.md lives at the first matching path in Step 1.1. Edit it directly (schema: `references/config/preferences-schema.md`), or delete it / ask "reconfigure baoyu-infographic preferences" / "重新配置" to re-run first-time setup. Common edits:
+EXTEND.md lives at the first matching path in Step 1.1. Edit it directly (schema: `references/config/preferences-schema.md`), or delete it / ask "reconfigure baoyu-infographic preferences" / "重新配置" (reconfigure) to re-run first-time setup. Common edits:
 
 - `preferred_image_backend`: `auto` (default; runtime-native wins, else the only installed backend, ask if multiple non-native) | `codex-imagegen` | `baoyu-image-gen` | `ask` (confirm every run)
 - `preferred_layout: dense-modules`, `preferred_style: morandi-journal`, `preferred_aspect: portrait`, `language: zh` — shift Step-3 recommendations and Step-4 defaults (never bypass Step 4).

@@ -48,7 +48,7 @@ Default: **confirm before generation**.
 
 - Explicit skill invocation, a file path, matched keywords/presets, `EXTEND.md` defaults, and any documented auto-selection are recommendation inputs only — none authorizes skipping confirmation.
 - Do not start Step 3 or Step 4 until the user confirms the dimensions / aspect / language / backend choices.
-- Skip confirmation only when the current request explicitly says so: `--quick`, "直接生成", "不用确认", "跳过确认", "按默认出图", or equivalent. `quick_mode: true` in `EXTEND.md` counts as a standing explicit opt-out — set it only when you want every run to skip Step 2.
+- Skip confirmation only when the current request explicitly says so: `--quick`, "直接生成" (generate directly), "不用确认" (no need to confirm), "跳过确认" (skip confirmation), "按默认出图" (use the defaults), or equivalent. `quick_mode: true` in `EXTEND.md` counts as a standing explicit opt-out — set it only when you want every run to skip Step 2.
 - When skipped, state the assumed dimensions / aspect / language / backend in the next user-facing update before generating.
 
 ## Options
@@ -198,7 +198,7 @@ Text correction: never patch a misspelled, garbled, or weak title/subtitle in th
 
 ## Changing Preferences
 
-EXTEND.md lives at the path from **Step 0**. Edit it directly (schema: [references/config/preferences-schema.md](references/config/preferences-schema.md); watermark: [references/config/watermark-guide.md](references/config/watermark-guide.md)), or delete it / ask "reconfigure baoyu-cover-image preferences" / "重新配置" to re-run first-time setup. Common edits:
+EXTEND.md lives at the path from **Step 0**. Edit it directly (schema: [references/config/preferences-schema.md](references/config/preferences-schema.md); watermark: [references/config/watermark-guide.md](references/config/watermark-guide.md)), or delete it / ask "reconfigure baoyu-cover-image preferences" / "重新配置" (reconfigure) to re-run first-time setup. Common edits:
 
 - `preferred_image_backend`: `auto` (default; runtime-native wins, else the only installed backend, ask if multiple non-native) | `codex-imagegen` | `baoyu-image-gen` | `ask` (confirm every run)
 - `watermark.enabled: true`, `preferred_type`, `preferred_palette`, `preferred_rendering`, `default_aspect`, `quick_mode: true`, `language` — shift auto-selection defaults and the confirmation flow.

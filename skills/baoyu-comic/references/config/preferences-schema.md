@@ -56,7 +56,7 @@ character_presets:
 
 ## Art Style Options
 
-| Value | 中文 | Description |
+| Value | Chinese name (中文) | Description |
 |-------|------|-------------|
 | `ligne-claire` | 清线 | Uniform lines, flat colors, European comic tradition |
 | `manga` | 日漫 | Large eyes, manga conventions, expressive emotions |
@@ -67,7 +67,7 @@ character_presets:
 
 ## Tone Options
 
-| Value | 中文 | Description |
+| Value | Chinese name (中文) | Description |
 |-------|------|-------------|
 | `neutral` | 中性 | Balanced, rational, educational |
 | `warm` | 温馨 | Nostalgic, personal, comforting |

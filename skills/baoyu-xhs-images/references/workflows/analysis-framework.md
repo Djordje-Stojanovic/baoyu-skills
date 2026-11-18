@@ -24,24 +24,24 @@ Unlike other platforms, Xiaohongshu content must prioritize:
 
 | Type | Characteristics | Best Style | Best Layout |
 |------|----------------|------------|-------------|
-| 种草/安利 | Product recommendation, benefits focus | cute/fresh | balanced/list |
-| 干货分享 | Knowledge, tips, how-to | notion | dense/list |
-| 个人故事 | Personal experience, emotional | warm | balanced |
-| 测评对比 | Review, comparison, pros/cons | bold/notion | comparison |
-| 教程步骤 | Step-by-step guide | fresh/notion | flow/list |
-| 避坑指南 | Warnings, mistakes to avoid | bold | list/comparison |
-| 清单合集 | Collections, recommendations | cute/minimal | list/dense |
+| 种草/安利 (product recommendation) | Product recommendation, benefits focus | cute/fresh | balanced/list |
+| 干货分享 (knowledge sharing) | Knowledge, tips, how-to | notion | dense/list |
+| 个人故事 (personal story) | Personal experience, emotional | warm | balanced |
+| 测评对比 (review and comparison) | Review, comparison, pros/cons | bold/notion | comparison |
+| 教程步骤 (tutorial steps) | Step-by-step guide | fresh/notion | flow/list |
+| 避坑指南 (pitfall guide) | Warnings, mistakes to avoid | bold | list/comparison |
+| 清单合集 (list collection) | Collections, recommendations | cute/minimal | list/dense |
 
-### 2. Hook Analysis (爆款标题潜力)
+### 2. Hook Analysis (爆款标题潜力, viral title potential)
 
 Evaluate title/hook potential using these patterns:
 
 **Hook Types**:
-- **数字钩子**: "5个方法", "3分钟学会", "99%的人不知道"
-- **痛点钩子**: "踩过的坑", "后悔没早知道", "别再..."
-- **好奇钩子**: "原来...", "竟然...", "没想到..."
-- **利益钩子**: "省钱", "变美", "效率翻倍"
-- **身份钩子**: "打工人必看", "学生党", "新手妈妈"
+- **Number hook (数字钩子)**: "5个方法" (5 methods), "3分钟学会" (learn in 3 minutes), "99%的人不知道" (99% of people don't know)
+- **Pain-point hook (痛点钩子)**: "踩过的坑" (pitfalls I fell into), "后悔没早知道" (wish I had known sooner), "别再..." (stop ...)
+- **Curiosity hook (好奇钩子)**: "原来..." (so it turns out ...), "竟然..." (unexpectedly ...), "没想到..." (never expected ...)
+- **Benefit hook (利益钩子)**: "省钱" (save money), "变美" (look better), "效率翻倍" (double your efficiency)
+- **Identity hook (身份钩子)**: "打工人必看" (office workers must read), "学生党" (students), "新手妈妈" (new mothers)
 
 **Rating Scale**:
 - ⭐⭐⭐⭐⭐ (5/5): Multiple strong hooks combined
@@ -50,17 +50,17 @@ Evaluate title/hook potential using these patterns:
 - ⭐⭐ (2/5): Weak hook, requires significant improvement
 - ⭐ (1/5): No clear hook
 
-### 3. Target Audience (用户画像)
+### 3. Target Audience (用户画像, user profile)
 
 | Audience | Interests | Preferred Style | Content Focus |
 |----------|-----------|-----------------|---------------|
-| 学生党 | 省钱、学习、校园 | cute/fresh | 平价、教程、学习方法 |
-| 打工人 | 效率、职场、减压 | minimal/notion | 工具、技巧、摸鱼 |
-| 宝妈 | 育儿、家居、省心 | warm/fresh | 实用、安全、经验 |
-| 精致女孩 | 美妆、穿搭、仪式感 | cute/retro | 好看、氛围、品质 |
-| 技术宅 | 工具、效率、极客 | notion/chalkboard | 深度、专业、新奇 |
-| 美食爱好者 | 探店、食谱、测评 | warm/pop | 好吃、简单、颜值 |
-| 旅行达人 | 攻略、打卡、小众 | fresh/retro | 省钱、避坑、拍照 |
+| 学生党 (students) | Saving money, study, campus | cute/fresh | Low prices, tutorials, study methods |
+| 打工人 (office workers) | Efficiency, workplace, stress relief | minimal/notion | Tools, tips, slacking off |
+| 宝妈 (young mothers) | Parenting, home, peace of mind | warm/fresh | Practical, safe, experience |
+| 精致女孩 (polished girls) | Beauty, outfits, ritual | cute/retro | Good looks, mood, quality |
+| 技术宅 (tech geeks) | Tools, efficiency, geek culture | notion/chalkboard | Depth, expertise, novelty |
+| 美食爱好者 (food lovers) | Restaurant visits, recipes, reviews | warm/pop | Tasty, simple, good looks |
+| 旅行达人 (travel experts) | Guides, check-in spots, hidden gems | fresh/retro | Saving money, avoiding pitfalls, photo spots |
 
 ### 4. Engagement Potential
 
@@ -71,33 +71,33 @@ Evaluate title/hook potential using these patterns:
 - Is it time-sensitive news? ✗ Low save potential
 
 **Share Triggers (分享冲动)**:
-- "我朋友也需要看这个" → High share potential
-- "这说的就是我" → Identity resonance
-- "太有用了必须分享" → Utility sharing
-- "笑死，给朋友看看" → Entertainment sharing
+- "我朋友也需要看这个" (My friend needs to see this too) → High share potential
+- "这说的就是我" (This is exactly me) → Identity resonance
+- "太有用了必须分享" (So useful, I have to share it) → Utility sharing
+- "笑死，给朋友看看" (So funny, let me show my friends) → Entertainment sharing
 
 **Comment Inducement (评论诱导)**:
-- Open-ended questions: "你是哪种类型？"
-- Experience sharing: "评论区说说你的经历"
-- Debate triggers: "你觉得呢？"
-- Help requests: "有更好的推荐吗？"
+- Open-ended questions: "你是哪种类型？" (Which type are you?)
+- Experience sharing: "评论区说说你的经历" (Tell us your experience in the comments)
+- Debate triggers: "你觉得呢？" (What do you think?)
+- Help requests: "有更好的推荐吗？" (Any better recommendations?)
 
 **Interaction Design (互动设计)**:
-- Polls: "A还是B？"
-- Challenges: "你能做到几个？"
-- Tags: "@你那个需要的朋友"
+- Polls: "A还是B？" (A or B?)
+- Challenges: "你能做到几个？" (How many can you do?)
+- Tags: "@你那个需要的朋友" (@ the friend who needs this)
 
 ### 5. Visual Opportunity Map
 
 | Content Element | Visual Treatment | Example |
 |-----------------|------------------|---------|
-| 数据/统计 | Highlighted numbers, simple charts | "节省80%时间" 大字突出 |
-| 对比 | Before/after, side-by-side | 左右分屏对比图 |
-| 步骤 | Numbered flow, arrows | 1→2→3 流程图 |
-| 清单 | Checklist with icons | ✓/✗ 列表配图标 |
-| 情感 | Character expressions, scenes | 卡通人物表情包 |
-| 产品 | Product showcase, lifestyle | 产品实拍+使用场景 |
-| 引用 | Quote cards, speech bubbles | 金句卡片设计 |
+| Data/statistics (数据/统计) | Highlighted numbers, simple charts | Big highlighted text such as "节省80%时间" (saves 80% of the time) |
+| Comparison (对比) | Before/after, side-by-side | Left-right split comparison image |
+| Steps (步骤) | Numbered flow, arrows | 1→2→3 flow chart |
+| List (清单) | Checklist with icons | ✓/✗ list with icons |
+| Emotion (情感) | Character expressions, scenes | Cartoon character emoji pack |
+| Product (产品) | Product showcase, lifestyle | Real product photos + usage scenes |
+| Quote (引用) | Quote cards, speech bubbles | Quote card design |
 
 ### 6. Swipe Flow Design
 
@@ -105,17 +105,17 @@ Plan the narrative arc across images:
 
 | Position | Purpose | Hook Strategy |
 |----------|---------|---------------|
-| **Cover (封面)** | Stop scrolling | 最强视觉冲击 + 核心标题 |
-| **Setup (铺垫)** | Build context | 痛点共鸣 / 好奇心 |
-| **Core (核心)** | Deliver value | 干货内容，每页1-2个要点 |
-| **Payoff (收获)** | Practical takeaway | 可执行的行动建议 |
-| **Ending (结尾)** | Drive action | CTA + 互动引导 |
+| **Cover (封面)** | Stop scrolling | Strongest visual impact + core title |
+| **Setup (铺垫)** | Build context | Pain-point resonance / curiosity |
+| **Core (核心)** | Deliver value | Practical content, 1-2 key points per page |
+| **Payoff (收获)** | Practical takeaway | Actionable advice |
+| **Ending (结尾)** | Drive action | CTA + interaction prompt |
 
 **Swipe Motivation Between Images**:
 - End each image with a hook for the next
-- Use "下一页更精彩" type transitions
+- Use transitions like "下一页更精彩" (the next page is even better)
 - Create information gaps that require swiping
-- Build anticipation through numbering ("第3个最重要")
+- Build anticipation through numbering ("第3个最重要" - the 3rd one matters most)
 
 ## Output Format
 
@@ -123,9 +123,9 @@ Analysis results should be saved to `analysis.md` with:
 
 ```yaml
 ---
-title: "5个让你效率翻倍的AI工具"
-topic: 干货分享
-content_type: 工具推荐
+title: "5个让你效率翻倍的AI工具"   # 5 AI tools that double your efficiency
+topic: 干货分享                      # knowledge sharing
+content_type: 工具推荐               # tool recommendations
 source_language: zh
 user_language: zh
 recommended_image_count: 6
@@ -133,56 +133,56 @@ recommended_image_count: 6
 
 ## Target Audience
 
-- **Primary**: 打工人、自由职业者 - 追求效率提升
-- **Secondary**: 学生党 - 写论文、做作业需要
-- **Tertiary**: 内容创作者 - 需要AI辅助
+- **Primary**: 打工人 (office workers), 自由职业者 (freelancers) - want higher efficiency
+- **Secondary**: 学生党 (students) - need it for papers and homework
+- **Tertiary**: 内容创作者 (content creators) - need AI help
 
 ## Hook Analysis
 
-**标题钩子评分**: ⭐⭐⭐⭐ (4/5)
-- ✓ 数字钩子: "5个"
-- ✓ 利益钩子: "效率翻倍"
-- △ 可增强: 加入身份标签 "打工人必看"
+**Title hook score**: ⭐⭐⭐⭐ (4/5)
+- ✓ Number hook (数字钩子): "5个" (5 items)
+- ✓ Benefit hook (利益钩子): "效率翻倍" (double your efficiency)
+- △ Can improve: add an identity tag, "打工人必看" (office workers must read)
 
-**建议优化**:
-- 原标题: "5个让你效率翻倍的AI工具"
-- 优化: "打工人必看！5个让我效率翻倍的AI神器"
+**Suggested improvement**:
+- Original title: "5个让你效率翻倍的AI工具" (5 AI tools that double your efficiency)
+- Improved: "打工人必看！5个让我效率翻倍的AI神器" (Office workers must read! 5 AI tools that doubled my efficiency)
 
 ## Value Proposition
 
-**为什么用户要看？**
-1. **实用价值**: 直接可用的工具推荐
-2. **省时省力**: 不用自己筛选，直接抄作业
-3. **FOMO**: 别人都在用，我不能落后
+**Why would users read this?**
+1. **Practical value**: tool recommendations they can use right away
+2. **Saves time and effort**: no need to screen tools themselves; they can just copy the list
+3. **FOMO**: everyone else uses them, so I can't fall behind
 
-**收藏理由**: 工具清单，需要时可以回来查
+**Save reason**: a tool list they can come back to when needed
 
 ## Engagement Design
 
-- **互动点**: 结尾问"你最常用哪个？"
-- **评论诱导**: "还有什么好用的工具评论区分享"
-- **分享触发**: 打工人会转发给同事
+- **Interaction point**: ask at the end, "你最常用哪个？" (Which one do you use most?)
+- **Comment inducement**: "还有什么好用的工具评论区分享" (Share other useful tools in the comments)
+- **Share trigger**: office workers will forward it to coworkers
 
 ## Content Signals
 
-- "AI工具" → notion + dense
-- "效率" → notion + list
-- "干货" → minimal + dense
+- "AI工具" (AI tools) → notion + dense
+- "效率" (efficiency) → notion + list
+- "干货" (practical knowledge) → minimal + dense
 
 ## Swipe Flow
 
 | Image | Position | Purpose | Hook |
 |-------|----------|---------|------|
-| 1 | Cover | 吸引停留 | 标题+视觉冲击 |
-| 2 | Setup | 建立共鸣 | 为什么需要AI工具 |
-| 3-5 | Core | 核心价值 | 每页1-2个工具详解 |
-| 6 | Ending | 行动引导 | 总结+互动引导 |
+| 1 | Cover | Make viewers stop | Title + strong visual impact |
+| 2 | Setup | Build resonance | Why you need AI tools |
+| 3-5 | Core | Core value | 1-2 tools explained per page |
+| 6 | Ending | Drive action | Summary + interaction prompt |
 
 ## Recommended Approaches
 
-1. **Notion + Dense** - 知识卡片风格，适合干货分享 (recommended)
-2. **Notion + List** - 清爽知识卡片风格
-3. **Minimal + Balanced** - 简约高端，适合职场人群
+1. **Notion + Dense** - knowledge-card style, suits practical-knowledge posts (recommended)
+2. **Notion + List** - clean knowledge-card style
+3. **Minimal + Balanced** - simple and premium, suits professionals
 ```
 
 ## Analysis Checklist

@@ -21,7 +21,7 @@ description: Watermark configuration guide for baoyu-cover-image
 | Handle | `@username` | Social media |
 | Domain | `myblog.com` | Cross-platform |
 | Brand | `MyBrand` | Simple branding |
-| Chinese | `博客名` | Chinese platforms |
+| Chinese | `博客名` (blog name) | Chinese platforms |
 
 ## Best Practices
 

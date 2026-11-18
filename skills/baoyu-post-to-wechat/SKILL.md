@@ -1,6 +1,6 @@
 ---
 name: baoyu-post-to-wechat
-description: Posts content to WeChat Official Account (微信公众号) via API or Chrome CDP. Supports article posting (文章) with HTML, markdown, or plain text input, and image-text posting (贴图, formerly 图文) with multiple images. Markdown article workflows default to converting ordinary external links into bottom citations for WeChat-friendly output. Use when user mentions "发布公众号", "post to wechat", "微信公众号", or "贴图/图文/文章".
+description: Posts content to WeChat Official Account (微信公众号, "WeChat Official Account") via API or Chrome CDP. Supports article posting (文章, "article") with HTML, markdown, or plain text input, and image-text posting (贴图 "sticker-image", formerly 图文 "image-text") with multiple images. Markdown article workflows default to converting ordinary external links into bottom citations for WeChat-friendly output. Use when user mentions "发布公众号" (publish to Official Account), "post to wechat", "微信公众号" (WeChat Official Account), or "贴图/图文/文章" (sticker-image / image-text / article).
 version: 1.118.2
 metadata:
   openclaw:
@@ -33,9 +33,9 @@ Reply in the user's language; keep paths, flags, field names in English.
 
 | Script | Purpose |
 |--------|---------|
-| `scripts/wechat-browser.ts` | Image-text posts (图文) |
-| `scripts/wechat-article.ts` | Article posting via browser (文章) |
-| `scripts/wechat-api.ts` | Article posting via API (文章) |
+| `scripts/wechat-browser.ts` | Image-text posts (图文, "image-text") |
+| `scripts/wechat-article.ts` | Article posting via browser (文章, "article") |
+| `scripts/wechat-api.ts` | Article posting via API (文章, "article") |
 | `scripts/md-to-wechat.ts` | Markdown → WeChat-ready HTML with image placeholders |
 | `scripts/check-permissions.ts` | Verify environment & permissions |
 
@@ -110,7 +110,7 @@ ${BUN_X} {baseDir}/scripts/check-permissions.ts
 | Paste keystroke (Linux) | Install `xdotool` (X11) or `ydotool` (Wayland) |
 | API credentials | Follow guided setup in Step 2, or set in `.baoyu-skills/.env` |
 
-## Image-Text Posting (图文)
+## Image-Text Posting (图文, "image-text")
 
 Up to 9 images:
 
@@ -121,7 +121,7 @@ ${BUN_X} {baseDir}/scripts/wechat-browser.ts --title "标题" --content "内容"
 
 Details: `references/image-text-posting.md`.
 
-## Article Posting Workflow (文章)
+## Article Posting Workflow (文章, "article")
 
 ```
 - [ ] Step 0: Load preferences (EXTEND.md)
@@ -159,7 +159,7 @@ Ask method unless specified in EXTEND.md or CLI:
 
 **API selected + missing credentials** → run guided setup per `references/api-setup.md` (writes to `.baoyu-skills/.env`).
 
-**`remote-api`**: for when "公众号设置 → IP 白名单" excludes the local IP but includes a server's. Rendering, image processing, draft assembly and HTML rewriting stay local; only the HTTPS calls to `api.weixin.qq.com` (token, uploadimg, add_material, draft/add) go through an SSH SOCKS5 forward (`ssh -N -D`), so WeChat sees the server's IP. Nothing is written to the remote host; `AppSecret` never leaves the local process. Remote needs only `sshd` + outbound network. Usage: "Remote API method" in Step 4.
+**`remote-api`**: for when "公众号设置 → IP 白名单" (Official Account settings → IP allowlist) excludes the local IP but includes a server's. Rendering, image processing, draft assembly and HTML rewriting stay local; only the HTTPS calls to `api.weixin.qq.com` (token, uploadimg, add_material, draft/add) go through an SSH SOCKS5 forward (`ssh -N -D`), so WeChat sees the server's IP. Nothing is written to the remote host; `AppSecret` never leaves the local process. Remote needs only `sshd` + outbound network. Usage: "Remote API method" in Step 4.
 
 ### Step 3: Resolve Theme/Color and Validate Metadata
 
@@ -207,7 +207,7 @@ Any `--remote-*` flag implies `--remote`. CLI values override account-level then
 - `article_type`: `news` (default) or `newspic`
 - For `news`, include `thumb_media_id` (cover required)
 - Always include `need_open_comment` (default `1`) and `only_fans_can_comment` (default `0`), even though the CLI doesn't expose them
-- For `news`, optional `content_source_url` ("阅读原文" link, max 1KB) from `--source-url` or frontmatter (see Step 3)
+- For `news`, optional `content_source_url` ("阅读原文" ("Read original") link, max 1KB) from `--source-url` or frontmatter (see Step 3)
 
 **Browser method** (accepts `--markdown` or `--html`):
 
@@ -220,7 +220,7 @@ Parameters and placeholder flow: `references/article-posting.md`.
 
 ### Step 5: Completion Report
 
-Report: input type + path; method; theme/color; title, summary, inline image count; comments open/closed + fans-only/all (API only); "✓ Draft saved to WeChat Official Account" + `media_id` (API only); next step for API: https://mp.weixin.qq.com → 内容管理 → 草稿箱; files created (`post-to-wechat/YYYY-MM-DD/slug.md` for plain text, `slug.html` if converted).
+Report: input type + path; method; theme/color; title, summary, inline image count; comments open/closed + fans-only/all (API only); "✓ Draft saved to WeChat Official Account" + `media_id` (API only); next step for API: https://mp.weixin.qq.com → 内容管理 (Content Management) → 草稿箱 (Drafts); files created (`post-to-wechat/YYYY-MM-DD/slug.md` for plain text, `slug.html` if converted).
 
 ## Feature Comparison
 
@@ -250,7 +250,7 @@ Report: input type + path; method; theme/color; title, summary, inline image cou
 | `Remote publish host is required` | Set `--remote-host` or `remote_publish_host` in EXTEND.md |
 | `SOCKS proxy on 127.0.0.1:… not ready` | SSH could not start the tunnel — check key, host, `StrictHostKeyChecking`, or use `--remote-connect-timeout` |
 | `ssh exited early` during remote publish | Verify the user can `ssh` non-interactively to the server; raise `--remote-connect-timeout` if the link is slow |
-| Remote API call returns `errcode 40164` (invalid IP) | The remote server's egress IP is not on WeChat's allowlist; add it in 公众号设置 → IP 白名单 |
+| Remote API call returns `errcode 40164` (invalid IP) | The remote server's egress IP is not on WeChat's allowlist; add it in 公众号设置 → IP 白名单 (Official Account settings → IP allowlist) |
 
 ## Extension Support
 

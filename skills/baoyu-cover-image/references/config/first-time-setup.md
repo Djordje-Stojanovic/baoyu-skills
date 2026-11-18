@@ -9,7 +9,7 @@ When no EXTEND.md is found, run this setup.
 
 **⛔ BLOCKING**: complete it before ANY other workflow step — do not ask about reference images, content, or dimensions (type, palette, rendering), and do not start content analysis. Ask only these questions, save EXTEND.md, then continue.
 
-**Exception**: when the current request opts out of confirmation (`--quick`, "直接生成", "不用确认", "跳过确认", "按默认出图", or equivalent), skip this setup entirely — use built-in defaults (no watermark, dimensions auto-selected, independent output directory, language from content), do not prompt, and do not create EXTEND.md. The next interactive run without `--quick` triggers setup as usual.
+**Exception**: when the current request opts out of confirmation (`--quick`, "直接生成" (generate directly), "不用确认" (no need to confirm), "跳过确认" (skip confirmation), "按默认出图" (use the defaults), or equivalent), skip this setup entirely — use built-in defaults (no watermark, dimensions auto-selected, independent output directory, language from content), do not prompt, and do not create EXTEND.md. The next interactive run without `--quick` triggers setup as usual.
 
 ## Questions
 

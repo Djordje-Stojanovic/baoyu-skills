@@ -1,6 +1,6 @@
 # ohmsha
 
-Ohmsha预设 - Educational manga with visual metaphors
+Ohmsha preset - Educational manga with visual metaphors
 
 ## Base Configuration
 
@@ -52,7 +52,7 @@ Every technical concept MUST be visualized as a metaphor:
 
 **IMPORTANT**: These Doraemon characters ARE the default for ohmsha preset. Generate character definitions using these exact characters unless user requests otherwise.
 
-To use custom characters: `--characters "Student:小明,Mentor:教授"` or define in EXTEND.md.
+To use custom characters: `--characters "Student:小明,Mentor:教授"` (Xiao Ming, Professor) or define in EXTEND.md.
 
 ### Page Title Convention
 

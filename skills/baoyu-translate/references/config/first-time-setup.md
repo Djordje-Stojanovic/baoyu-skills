@@ -126,9 +126,9 @@ style: [storytelling/formal/technical/literal/academic/business/humorous/convers
 # Custom glossary (optional) — add your own term translations here
 # glossary:
 #   - from: "Term"
-#     to: "翻译"
+#     to: "翻译"          # "translation"
 #   - from: "Another Term"
-#     to: "另一个翻译"
+#     to: "另一个翻译"      # "another translation"
 #     note: "Usage context"
 ```
 

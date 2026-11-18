@@ -19,7 +19,7 @@ Bold display font in dark maroon, ALL CAPS in brackets for main titles. English 
 
 ### Secondary Font (Labels)
 
-Clean sans-serif for bilingual callout labels. Format: "ENGLISH TERM 中文翻译". High contrast against background.
+Clean sans-serif for bilingual callout labels. Format: "ENGLISH TERM 中文翻译" (English term followed by its Chinese translation). High contrast against background.
 
 ### Body Font
 

@@ -1,6 +1,6 @@
 ---
 name: baoyu-article-illustrator
-description: Analyzes article structure, identifies positions requiring visual aids, generates illustrations with Type × Style × Palette three-dimension approach. Use when user asks to "illustrate article", "add images", "generate images for article", or "为文章配图".
+description: Analyzes article structure, identifies positions requiring visual aids, generates illustrations with Type × Style × Palette three-dimension approach. Use when user asks to "illustrate article", "add images", "generate images for article", or "为文章配图" (illustrate the article).
 version: 1.117.4
 metadata:
   openclaw:
@@ -47,7 +47,7 @@ Change the pinned backend via `## Changing Preferences` below. Tool names above 
 After every prompt file for the run has been saved and verified, generate images in batches by default:
 
 1. Use the chosen backend's native batch / multi-task interface if it exists. Each task keeps its own prompt file, output path, aspect ratio, and direct reference images.
-2. Otherwise, if the runtime can issue parallel tool calls, dispatch up to `generation_batch_size` images at a time (default `4`). An explicit request in the current message (`--batch-size 4`, "并行4张一起生成") overrides EXTEND.md.
+2. Otherwise, if the runtime can issue parallel tool calls, dispatch up to `generation_batch_size` images at a time (default `4`). An explicit request in the current message (`--batch-size 4`, "并行4张一起生成" (generate 4 in parallel)) overrides EXTEND.md.
 3. Otherwise generate sequentially.
 
 - Never start a batch until all its prompt files exist on disk.
@@ -60,7 +60,7 @@ Default: **confirm before generation**.
 
 - Explicit skill invocation, a file path, matched signals/presets, and `EXTEND.md` defaults are recommendation inputs only — none authorizes skipping confirmation.
 - Do not start Step 4 or later until the user completes Step 3.
-- Skip confirmation only when the current request explicitly says so ("直接生成", "不用确认", "跳过确认", "按默认出图", or equivalent). Then state the assumed type / density / style / palette / language / backend in the next user-facing update before generating.
+- Skip confirmation only when the current request explicitly says so ("直接生成" (generate directly), "不用确认" (no need to confirm), "跳过确认" (skip confirmation), "按默认出图" (use the defaults), or equivalent). Then state the assumed type / density / style / palette / language / backend in the next user-facing update before generating.
 
 ## Reference Images
 
@@ -173,7 +173,7 @@ Text correction: never patch misspelled, garbled, or weak rendered text in the b
 
 ## Changing Preferences
 
-EXTEND.md lives at the first matching path in Step 1.5. Edit it directly (schema: [references/config/preferences-schema.md](references/config/preferences-schema.md)), or delete it / ask "reconfigure baoyu-article-illustrator preferences" / "重新配置" to re-run first-time setup. Common edits:
+EXTEND.md lives at the first matching path in Step 1.5. Edit it directly (schema: [references/config/preferences-schema.md](references/config/preferences-schema.md)), or delete it / ask "reconfigure baoyu-article-illustrator preferences" / "重新配置" (reconfigure) to re-run first-time setup. Common edits:
 
 - `preferred_image_backend`: `auto` (default; runtime-native wins, else the only installed backend, ask if multiple non-native) | `codex-imagegen` | `baoyu-image-gen` | `ask` (confirm every run)
 - `generation_batch_size: 4` — concurrent renders when parallel calls are supported

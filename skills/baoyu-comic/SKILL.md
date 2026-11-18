@@ -1,6 +1,6 @@
 ---
 name: baoyu-comic
-description: Knowledge comic creator supporting multiple art styles and tones. Creates original educational comics with detailed panel layouts and batch-capable image generation. Use when user asks to create "知识漫画", "教育漫画", "biography comic", "tutorial comic", or "Logicomix-style comic".
+description: Knowledge comic creator supporting multiple art styles and tones. Creates original educational comics with detailed panel layouts and batch-capable image generation. Use when user asks to create "知识漫画" (knowledge comic), "教育漫画" (educational comic), "biography comic", "tutorial comic", or "Logicomix-style comic".
 version: 1.117.4
 metadata:
   openclaw:
@@ -51,7 +51,7 @@ Change the pinned backend via `## Changing Preferences` below. Tool names above 
 After every prompt file for the current generation group is saved and verified, generate images in batches by default:
 
 1. Use the backend's native batch / multi-task interface if it exists. Each task keeps its own prompt file, output path, aspect ratio, session ID, and direct reference images.
-2. Else, if the runtime can issue parallel tool calls, dispatch up to `generation_batch_size` images at a time (default `4`). An explicit request in the current message (e.g. `--batch-size 4`, "并行4张一起生成") overrides EXTEND.md.
+2. Else, if the runtime can issue parallel tool calls, dispatch up to `generation_batch_size` images at a time (default `4`). An explicit request in the current message (e.g. `--batch-size 4`, "并行4张一起生成" (generate 4 in parallel)) overrides EXTEND.md.
 3. Else generate sequentially.
 
 Rules:
@@ -131,7 +131,7 @@ Details: [references/partial-workflows.md](references/partial-workflows.md)
   | `wuxia` | ink-brush + action | Qi effects, combat visuals, atmospheric |
   | `shoujo` | manga + romantic | Decorative elements, eye details, romantic beats |
   | `concept-story` | manga + warm | Visual symbol system, growth arc, dialogue+action balance |
-  | `four-panel` | minimalist + neutral + four-panel layout | 起承转合 structure, B&W + spot color, stick-figure characters |
+  | `four-panel` | minimalist + neutral + four-panel layout | Setup-development-turn-conclusion (起承转合) structure, B&W + spot color, stick-figure characters |
 
 - **Compatibility matrix** and **content-signal → preset** table: [references/auto-selection.md](references/auto-selection.md). Read it before recommending combinations in Step 2.
 
@@ -264,7 +264,7 @@ Text correction policy:
 EXTEND.md lives at `.baoyu-skills/baoyu-comic/EXTEND.md` (project) or `~/.baoyu-skills/baoyu-comic/EXTEND.md` (user). To change it:
 
 - **Edit directly** — full schema: `references/config/preferences-schema.md`.
-- **Reconfigure interactively** — delete EXTEND.md (or ask "reconfigure baoyu-comic preferences" / "重新配置"); the next run re-triggers first-time setup.
+- **Reconfigure interactively** — delete EXTEND.md (or ask "reconfigure baoyu-comic preferences" / "重新配置" (reconfigure)); the next run re-triggers first-time setup.
 - **Common one-line edits**:
   - `preferred_image_backend: auto` — default; runtime-native tool wins, falls back to the only installed backend, asks only if multiple non-native are present.
   - `preferred_image_backend: codex-imagegen` — pin to Codex's built-in.

@@ -177,7 +177,7 @@ Guided by the Step 2 analysis, make content scannable and key points impossible 
 - Preserve the author's voice, tone, and every word
 - **Bold key conclusions and core takeaways** — what a reader would highlight
 - Turn prose into lists only when the parallel structure is clearly there
-- Add headings where the topic genuinely shifts — vivid and specific over generic (e.g., "3 天搞定 vs 传统方案" over "方案对比")
+- Add headings where the topic genuinely shifts — vivid and specific over generic (e.g., "3 天搞定 vs 传统方案" (done in 3 days vs the old way) over "方案对比" (plan comparison))
 - Tables for comparisons or structured data buried in prose
 - Blockquotes for golden quotes, memorable statements, or important warnings
 - Fix obvious typos (from Step 2)

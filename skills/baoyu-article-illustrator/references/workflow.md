@@ -92,7 +92,7 @@ if (Test-Path "$HOME/.baoyu-skills/baoyu-article-illustrator/EXTEND.md") { "user
 | Recommended type | Based on content signals and purpose |
 | Recommended density | Based on length and complexity |
 
-If the article uses metaphors (e.g., "电锯切西瓜"), do NOT illustrate literally — visualize the **underlying concept**.
+If the article uses metaphors (e.g., "电锯切西瓜" (chainsaw cutting a watermelon)), do NOT illustrate literally — visualize the **underlying concept**.
 
 ### 2.3 Identify Positions
 

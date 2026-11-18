@@ -1,6 +1,6 @@
 ---
 name: baoyu-markdown-to-html
-description: Converts Markdown to styled HTML with WeChat-compatible themes. Supports code highlighting, math, Mermaid (rendered to PNG via headless Chrome), PlantUML, footnotes, alerts, infographics, and optional bottom citations for external links. Use when user asks for "markdown to html", "convert md to html", "md 转 html", "微信外链转底部引用", or needs styled HTML output from markdown.
+description: Converts Markdown to styled HTML with WeChat-compatible themes. Supports code highlighting, math, Mermaid (rendered to PNG via headless Chrome), PlantUML, footnotes, alerts, infographics, and optional bottom citations for external links. Use when user asks for "markdown to html", "convert md to html", "md 转 html" (md to html), "微信外链转底部引用" (WeChat external links to bottom citations), or needs styled HTML output from markdown.
 version: 1.117.3
 metadata:
   openclaw:
@@ -65,8 +65,8 @@ Theme from EXTEND.md → use it directly, do NOT ask.
 
 ### Step 1.5: Determine Citation Mode
 
-Default off; don't ask. Enable (`--cite`) only if the user explicitly asks for "微信外链转底部引用", "底部引用", "文末引用", or passes `--cite`. When enabled:
-- Ordinary external links are rendered with numbered superscripts and collected under a final `引用链接` section.
+Default off; don't ask. Enable (`--cite`) only if the user explicitly asks for "微信外链转底部引用" (WeChat external links to bottom citations), "底部引用" (bottom citations), "文末引用" (citations at the end), or passes `--cite`. When enabled:
+- Ordinary external links are rendered with numbered superscripts and collected under a final `引用链接` ("Reference Links") section.
 - `https://mp.weixin.qq.com/...` links stay as direct links and are not moved to the bottom.
 - Bare links where link text equals URL stay inline.
 
@@ -89,7 +89,7 @@ Show `htmlPath` from the JSON result; mention `backupPath` if a backup was creat
 | `--font-family <name>` | Font: sans, serif, serif-cjk, mono, or CSS value | theme default |
 | `--font-size <N>` | Font size: 14px, 15px, 16px, 17px, 18px | 16px |
 | `--title <title>` | Override title from frontmatter | |
-| `--cite` | Convert external links to bottom citations, append `引用链接` section | false (off) |
+| `--cite` | Convert external links to bottom citations, append `引用链接` ("Reference Links") section | false (off) |
 | `--keep-title` | Keep the first heading in content | false (removed) |
 | `--mermaid-theme <name>` | Mermaid theme: `default`, `forest`, `dark`, `neutral`, `base` | default |
 | `--mermaid-scale <N>` | Mermaid render scale (positive number ≤ 4) | 2 |

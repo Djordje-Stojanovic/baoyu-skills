@@ -34,7 +34,7 @@ description: Watermark configuration guide for baoyu-comic
 |--------|---------|-------|
 | Handle | `@username` | Social media style |
 | Text | `Studio Name` | Professional branding |
-| Chinese | `漫画工作室` | Chinese market |
+| Chinese | `漫画工作室` (Comic Studio) | Chinese market |
 | Initials | `ABC` | Minimal, clean |
 
 ## Best Practices for Comics

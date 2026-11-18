@@ -1,6 +1,6 @@
 ---
 name: baoyu-post-to-weibo
-description: Posts content to Weibo (微博). Supports regular posts with text, images, and videos, and headline articles (头条文章) with Markdown input via Chrome CDP. Use when user asks to "post to Weibo", "发微博", "发布微博", "publish to Weibo", "share on Weibo", "写微博", or "微博头条文章".
+description: Posts content to Weibo (微博, "Weibo"). Supports regular posts with text, images, and videos, and headline articles (头条文章, "headline article") with Markdown input via Chrome CDP. Use when user asks to "post to Weibo", "发微博" (post a Weibo), "发布微博" (publish a Weibo), "publish to Weibo", "share on Weibo", "写微博" (write a Weibo), or "微博头条文章" (Weibo headline article).
 version: 1.117.3
 metadata:
   openclaw:
@@ -44,7 +44,7 @@ Google Chrome or Chromium; `bun`. First run: user logs in to Weibo manually (ses
 
 ## Post Type Selection
 
-Unless the user specifies: Markdown file (`.md`) → Headline Article (头条文章); plain text / text with images → Regular Post.
+Unless the user specifies: Markdown file (`.md`) → Headline Article (头条文章, "headline article"); plain text / text with images → Regular Post.
 
 ## Regular Posts
 
@@ -62,7 +62,7 @@ ${BUN_X} {baseDir}/scripts/weibo-post.ts "Watch this" --video ./clip.mp4
 | `--video <path>` | Video file (repeatable) |
 | `--profile <dir>` | Custom Chrome profile |
 
-## Headline Articles (头条文章)
+## Headline Articles (头条文章, "headline article")
 
 Editor: `https://card.weibo.com/article/v3/editor`.
 
@@ -76,14 +76,14 @@ ${BUN_X} {baseDir}/scripts/weibo-article.ts article.md --cover ./cover.jpg
 | `<markdown>` | Markdown file (positional) |
 | `--cover <path>` | Cover image |
 | `--title <text>` | Override title (max 32 chars, truncated with warning if longer) |
-| `--summary <text>` | Override summary/导语 (max 44 chars, auto-regenerated from content if longer) |
+| `--summary <text>` | Override summary/导语 (intro) (max 44 chars, auto-regenerated from content if longer) |
 | `--profile <dir>` | Custom Chrome profile |
 
 Frontmatter: `title`, `summary`, `cover_image`.
 
 **Markdown-to-HTML**: do NOT pass any `--theme` when converting; use the default theme.
 
-Script flow: opens the editor → clicks "写文章" and waits until editable → fills title and summary → pastes HTML into the ProseMirror editor → replaces image placeholders one by one (copy image → select placeholder → paste).
+Script flow: opens the editor → clicks "写文章" ("Write article") and waits until editable → fills title and summary → pastes HTML into the ProseMirror editor → replaces image placeholders one by one (copy image → select placeholder → paste).
 
 **Post-composition check**: the script then reports remaining `WBIMGPH_` placeholders and expected vs actual image count. If it prints warnings, tell the user the specific issues before they publish.
 
