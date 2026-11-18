@@ -110,3 +110,25 @@ All skills MUST use `baoyu-` prefix. Details: [docs/creating-skills.md](docs/cre
 | Chrome profile platform paths | [docs/chrome-profile.md](docs/chrome-profile.md) |
 | Comic style maintenance | [docs/comic-style-maintenance.md](docs/comic-style-maintenance.md) |
 | ClawHub/OpenClaw publishing | [docs/publishing.md](docs/publishing.md) |
+
+## How we work
+
+- Before you write code: [`ENGINEERING.md`](ENGINEERING.md). Section 1 is the Algorithm, Musk's five steps. Run them, in order, before every task.
+
+Owner's order, 2026-11-12. Run Musk's five steps before every task: question, delete, simplify, speed up, automate.
+
+- Plan content on https://schedule.geldtools.com, the owner's planner and the source of truth for what goes out when: `/planner` holds the plan to 2027-12-31 (which series on which day), `/calendar` every planned and live post, `/posts` and `/status` what went out. Look there before you pick a topic or a slot; plan nowhere else.
+- When a skill and the owner's message conflict, the message wins.
+- No new timer, cron job or alert (owner, 2026-11-17): a job runs when its cause happens (a merge, a deploy, a publish) or as a setting of the tool. A timer stays only where no such setting exists, with one line why. What is left: [`docs/reference/scheduled-jobs.md`](docs/reference/scheduled-jobs.md).
+- A cloud box for one task (boat.dev), only when the owner or a spec asks: `laboat box <repo> [issue]` copies the base with the repo at the newest main on a new branch and links it into T3; work and commit there, `laboat pr <id>`, then `laboat land <id>` (merge, delete the branch and the box). Skill `sigmaboat`; guide Thinkcenter_Setup `docs/guides/BOAT.md`.
+- Every word the owner says goes into one log.
+- Every task is a ticket: what he gets, his own words, and a check that proves it done.
+- The map sorts tickets into lists, and each ticket names what it waits for:
+  - L1: the agent researches and decides.
+  - L2: the agent researches; he decides.
+  - L3: he decides or acts.
+  - L4: decided; build it.
+  - END: agents do it; he picks the moment.
+- https://review.geldtools.com is the one place where he answers, grades and sees everything, for every project.
+- The loop runs on three flight levels. Level 3 is the map, Level 2 the managers, Level 1 the workers. A worker takes one ticket per chat; then the chat is archived.
+- Done means a second agent checked it live and wrote the proof.
