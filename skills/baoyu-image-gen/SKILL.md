@@ -69,7 +69,7 @@ When a real person/character/object must be preserved from reference images:
 - Long feature descriptions ("young East Asian woman, oval face, clear eyes...") make the model synthesize a new matching person instead.
 - Prefer 2–4 curated existing source refs; many or multi-megabyte refs can destabilize streaming providers.
 - Don't use newly generated outputs as refs unless the user asks (drift compounds).
-- Too polished/influencer-like → reduce stylized refs, add anti-beautification constraints (no face slimming, eye enlargement, heavy makeup, commercial travel shoot, over-smoothing).
+- Too polished/influencer-like → reduce stylized refs, add anti-beautification constraints (no face slimming, eye enlargement, heavy makeup, advertising travel shoot, over-smoothing).
 - Younger/older look → keep the face; express age via clothing, posture, scene, styling. Never ask to change facial identity.
 
 ## Options
