@@ -135,7 +135,7 @@ See `references/dimensions/typography.md` for full typography dimension specs.
 | MiSans | Modern sans-serif | Clean, versatile, screen-optimized |
 | Noto Sans SC | Neutral sans-serif | Standard, multilingual |
 | siyuanSongti | Refined Song typeface | Elegant, editorial |
-| alimamashuheiti | Geometric sans-serif | Commercial, structured |
+| alimamashuheiti | Geometric sans-serif | Business, structured |
 | LXGW Bright | Song-Kai hybrid | Warm, readable |
 
 **Multilingual Pairing**:
